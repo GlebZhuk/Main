@@ -2,10 +2,12 @@ package Lesson4.Homework;
 
 public class Task2 {
     public static void main(String[] args) {
-        Comp comp1 = new Comp(123, "w123");
-        comp1.showInfo(new Ram(),new Hdd());
-        Comp comp2 = new Comp(256, "Vinux2000", new Ram("Ram25", 50), new Hdd("Hdd33", 560, "outside"));
+        Comp comp1 = new Comp(123, "ws23");
+        comp1.showInfo();
+        Ram ram = new Ram("Kingston", 128);
+        Hdd hdd = new Hdd("Kingston", 500, "internal");
+        Comp comp2 = new Comp(256, "Vinux2000", ram, hdd);
 
-       comp2.showInfo(new Ram("Name542", 9990), new Hdd("1231", 123, "inside"));
+        comp2.showInfo();
     }
 }

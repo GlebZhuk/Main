@@ -4,21 +4,33 @@ public class Comp {
     int cost;
     String model;
     Ram ram;
-    Ram hdd;
+    Hdd hdd;
 
     Comp(int cost, String mode) {
         this.cost = cost;
         this.model = model;
-        Ram ram = new Ram();
-        Hdd hdd = new Hdd();
+        this.ram = new Ram();
+        this.hdd = new Hdd();
     }
 
-    Comp(int cost, String model, Ram ram, Hdd hdd) {
+    public Comp(int cost, String model, Ram ram, Hdd hdd) {
         this.cost = cost;
         this.model = model;
+        this.ram = ram;
+        this.hdd = hdd;
     }
 
-    public void showInfo(Ram ram, Hdd hdd) {
-        System.out.println("Cost:" + cost + " Model:" + model + " Ram:" + ram.name + " " + ram.value + " HDD:" + hdd.name + " " + hdd.type + " " + hdd.value);
+    @Override
+    public String toString() {
+        return "Comp{" +
+                "cost=" + cost +
+                ", model='" + model + '\'' +
+                ", ram=" + ram +
+                ", hdd=" + hdd +
+                '}';
+    }
+
+    public void showInfo() {
+        System.out.println(this.toString());
     }
 }

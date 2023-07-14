@@ -5,17 +5,26 @@ public class Hdd {
     int value;
     String type;
 
-    Hdd() {
+    public Hdd() {
     }
 
-    Hdd(String name, int value, String type) {
+    public Hdd(String name, int value, String type) {
         this.name = name;
         this.value = value;
         this.type = type;
     }
 
+    @Override
+    public String toString() {
+        return "Hdd{" +
+                "name='" + name + '\'' +
+                ", value=" + value +
+                ", type='" + type + '\'' +
+                '}';
+    }
+
     public void showInfo() {
-        System.out.println("Name: " + name + "Value: " + value + "Tupe: " + type);
+        System.out.println(this.toString());
     }
 
 }
