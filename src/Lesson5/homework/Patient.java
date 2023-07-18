@@ -1,14 +1,13 @@
 package Lesson5.homework;
 
 public class Patient {
-    private int number;
 
-    public int getPlan() {
-        return number;
-    }
+    private TreatmentPlan treatmentPlan;
 
-    public void setPlan(int number) {
-        this.number = number;
+    public void setPlan(TreatmentPlan treatmentPlan)
+    {
+
+        this.treatmentPlan=treatmentPlan;
     }
 
 }

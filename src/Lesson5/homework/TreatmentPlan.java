@@ -11,7 +11,7 @@ public class TreatmentPlan {
         return number;
     }
 
-    public void choseTreat(int number) {
+    public static void choseTreat(int number) {
         if (number == 1) {
             Surgeon surgeon = new Surgeon();
             surgeon.treat();
@@ -24,3 +24,5 @@ public class TreatmentPlan {
         }
     }
 }
+
+
