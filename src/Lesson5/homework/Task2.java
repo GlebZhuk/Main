@@ -5,7 +5,7 @@ public class Task2 {
         Patient patient = new Patient();
         TreatmentPlan treatmentPlan = new TreatmentPlan(2);
         patient.setPlan(treatmentPlan);
-        treatmentPlan.choseTreat(treatmentPlan.getPlan());
+        treatmentPlan.choseTreat(treatmentPlan);
     }
 
 

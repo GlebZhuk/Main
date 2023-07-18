@@ -4,10 +4,9 @@ public class Patient {
 
     private TreatmentPlan treatmentPlan;
 
-    public void setPlan(TreatmentPlan treatmentPlan)
-    {
+    public void setPlan(TreatmentPlan treatmentPlan) {
 
-        this.treatmentPlan=treatmentPlan;
+        this.treatmentPlan = treatmentPlan;
     }
 
 }
