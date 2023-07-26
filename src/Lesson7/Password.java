@@ -19,7 +19,7 @@ public class Password {
     public static void revisePassword() throws WrongPasswordException {
         System.out.println("Password:");
         Scanner input = new Scanner(System.in);
-        password = input.next();
+        password = input.nextLine();
         char[] chars = password.toCharArray();
         for (char i : chars) {
             if (!Character.isDigit(i)) {
